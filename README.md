@@ -1,3 +1,11 @@
+## TODO
+
+- dodati listu tutoriala
+- dodati opciju dodavanja tutoriala
+- dodati pregled zasebnog tutoriala
+- dodati mogucnost dodavanja i brisanja artikla iz korpe
+- dodati mogucnost editovanja tutoriala
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
