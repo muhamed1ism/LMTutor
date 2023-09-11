@@ -2,7 +2,6 @@
 
 import { SafeUser } from "../types"
 import Button from "../(components)/Button"
-import Image from "next/image"
 import useBasket from "../hooks/useBasket"
 
 interface Props {
@@ -16,7 +15,7 @@ interface Props {
 }
 
 export default function Induvidual({
-    author,
+    author, 
     price,
     imageSrc,
     name,

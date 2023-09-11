@@ -65,3 +65,33 @@ export async function DELETE(request:Request, {params}: {params:IParams}) {
     })
     return NextResponse.json(user)
 }
+
+//export function put for setting basketIds to empty array without using courseId
+export async function PUT(request:Request, {params}: {params:IParams}) {
+    const currentUser = await myUser();
+
+    if(!currentUser) {
+        return NextResponse.error()
+    }
+
+    const {courseId} = params
+
+    if(!courseId || typeof courseId !== 'string') {
+        throw new Error('Invalid ID')
+    }
+
+    let basketIds = [...(currentUser.basketIds || [])]
+
+    basketIds = [];
+
+    const user = await prisma.user.update({
+        where: {
+            id:currentUser.id
+        },
+        data:{
+            basketIds
+        }
+    })
+    return NextResponse.json(user)
+
+}
