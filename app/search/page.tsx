@@ -17,8 +17,10 @@ export default async function page({searchParams}:HomeProps) {
             <div className="p-12 flex gap-2 flex-wrap">
                     {courses.map((item:any) => (
                         <CourseComponent
+
                         key={item.id}
                         data={item}
+                        currentUser={currentUser}
                         />
                     ))}
             </div>
