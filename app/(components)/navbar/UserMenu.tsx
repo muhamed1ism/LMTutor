@@ -14,7 +14,7 @@ export default function UserMenu({currentUser,closeUserMenu}:UserMenuProps) {
 
   return (
     <div className="
-    flex flex-col h-[40vh] bg-zinc-900 shadow-lg right-0 rounded-xl px-4 py-2 gap-6
+    flex flex-col h-100 bg-zinc-900 shadow-lg right-0 rounded-xl px-4 py-2 gap-6
     ">
         <div className="flex items-center gap-4 hover:opacity-80" onClick={() => router.push('/user')}>
 

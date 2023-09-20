@@ -23,7 +23,7 @@ export default async function Home({searchParams}: HomeProps) {
       images={images}
       />
 
-        <div>
+        <div className="py-11 h-100 bg-gradient-to-b from-zinc-800 to-zinc-700">
 
           <div className="flex flex-wrap px-8">
             {courses.map((item:any) => (

@@ -28,7 +28,7 @@ export default function SliderMain({images}:CarouselProps) {
 
 
   return (
-    <div className="relative pb-16">
+    <div className="relative">
         <div>
             <button onClick={prevImage} className="absolute left-[2%] top-[50%] z-[40] text-white"><BsArrowLeft/></button>
             <img src={currentImage} alt={`Image ${current + 1}`} className="h-[500px] object-cover w-full bg-zinc-600"/>

@@ -9,3 +9,7 @@ export type SafeUser = Omit<User,"createdAt" | "updatedAt" > & {
 export type safeCourse = Omit<Course,"createdAt"> & {
     createdAt:string;
 }
+
+export type safeUser = Omit<User,"createdAt"> & {
+    createdAt:string;
+}
