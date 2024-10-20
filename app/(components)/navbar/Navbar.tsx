@@ -60,7 +60,7 @@ export default function Navbar({myUser,basketItems}:UserMenuProps) {
 
                     <form className="lg:flex-1 lg:flex hidden" onSubmit={onSearch}>
                         <input type="text" 
-                        placeholder="Potraži tutorijal ..."
+                        placeholder="Search ..."
                         onChange={(e) => setSearchQuery(e.target.value)}
                         className="
                         w-96 p-3 font-light bg-zinc-800 rounded-full border-black border-[1px] outline-none text-zinc-300
@@ -70,13 +70,13 @@ export default function Navbar({myUser,basketItems}:UserMenuProps) {
                 </div>
 
 
-                <div className="items-center text-zinc-300 gap-4 text-[1rem] px-2 hidden lg:flex">
+                <div className="items-center text-zinc-300 gap-8 text-[1rem] px-2 hidden lg:flex">
                     <div>
-                        <Link className="hover:opacity-80" href="#">Tutoriali</Link>
+                        <Link className="hover:opacity-80" href="#">Tutorials</Link>
                     </div>
 
                     <div>
-                        <a className="hover:opacity-80" href={myUser ?  "/create" : '/login'}>Objavi tutorial</a>
+                        <a className="hover:opacity-80" href={myUser ?  "/create" : '/login'}>Publish tutorial</a>
                     </div>
 
                     <div className="relative hover:opacity-80">
@@ -92,11 +92,11 @@ export default function Navbar({myUser,basketItems}:UserMenuProps) {
                     {!myUser && (
                         <>
                             <div>
-                              <Link  href='/login' className='py-2 px-6 rounded-xl text-zinc-200 bg-zinc-900 border-black border-[1px] hover:opacity-80'>Prijavi se</Link>
+                              <Link  href='/login' className='py-2 px-6 rounded-xl text-zinc-200 bg-zinc-900 border-black border-[1px] hover:opacity-80'>Login</Link>
                             </div>
 
                             <div>
-                               <Link href='/register' className='py-2 px-6 rounded-xl bg-zinc-300 text-zinc-900 border-[1px] border-black hover:opacity-80'>Registruj se</Link>
+                               <Link href='/register' className='py-2 px-6 rounded-xl bg-zinc-300 text-zinc-900 border-[1px] border-black hover:opacity-80'>Register</Link>
                             </div>
                         </>
                     )}
@@ -110,7 +110,7 @@ export default function Navbar({myUser,basketItems}:UserMenuProps) {
 
 
                     {userMenuOpen && (
-                        <div className="absolute bottom-0 top-20 right-20">
+                        <div className="absolute bottom-0 top-20 right-2">
                             <UserMenu
                                 currentUser={myUser}
                                 closeUserMenu={closeUserMenu}

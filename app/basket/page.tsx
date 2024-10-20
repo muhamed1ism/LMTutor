@@ -28,9 +28,9 @@ export default async function page() {
         </div>
 
         <div className="fixed bottom-0 w-full bg-zinc-900 p-5 flex justify-end items-center">
-          <div className="text-white mr-4">Ukupno: {totalPrice} RSD</div>
+          <div className="text-white mr-4">Total: $ {totalPrice}</div>
           <BasketClear currentUser={currentUser}/>
-          <button className="bg-gradient-to-r from-cyan-600 to-sky-700 text-white px-4 py-2 rounded-lg mr-4 hover:opacity-80 transition">Završi kupovinu
+          <button className="bg-gradient-to-r from-cyan-600 to-sky-700 text-white px-4 py-2 rounded-lg mr-4 hover:opacity-80 transition">Complete purchase
           </button>
         </div>
     </div>

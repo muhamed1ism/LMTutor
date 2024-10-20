@@ -43,11 +43,11 @@ export default function Induvidual({
                 <div className="w-8/12 flex flex-col justify-center">
                     <h1 className="text-center text-white px-4 py-3">{name}</h1>
                     <p className="text-center text-white text-opacity-70 px-4">{description}</p>
-                    <p className="text-center text-white text-opacity-50 pb-3">Autor: {author}</p>
+                    <p className="text-center text-white text-opacity-50 pb-3">Author: {author}</p>
                     <div className="flex flex-wrap justify-center items-center gap-3 py-4 px-3 text-white">
-                        <p id="price">{price} KM</p>
+                        <p id="price">$ {price}</p>
                             
-                        <Button onClick={toggleBasket} type='button' label={`${hasBasket ? 'Ukloni iz korpe' : 'Dodaj u korpu'}`} hasBasket={hasBasket}/>
+                        <Button onClick={toggleBasket} type='button' label={`${hasBasket ? 'Remove from basket' : 'Add to basket'}`} hasBasket={hasBasket}/>
                     </div>
                 </div>
             </div>

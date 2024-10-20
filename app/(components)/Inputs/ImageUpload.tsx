@@ -37,7 +37,7 @@ const ImageUpload:React.FC<ImageUploadProps> = ({
                 <div onClick={() => open?.()} className='relative cursor-pointer hover:opacity-70 border-dashed border-2  flex flex-col justify-center items-center h-[500px] '>
                     <TbPhotoPlus/>        
                     <div className='text-lg'>
-                        Pritisnite za prijenos
+                        Click to upload
                     </div>
 
                     {value && (

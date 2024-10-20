@@ -1,19 +1,19 @@
 export const User = [
     {   
-        name:"Moje objave",
+        name:"My posts",
         link: '/'
     },
 
     {
-        name:"Korpa",
+        name:"Basket",
         link:'/basket'
     },
     {
-        name:"Moji tutoriali",
+        name:"My tutorials",
         link:'/mycourses'
     },
     {
-        name:"O nama",
+        name:"About us",
         link:'/about'
     },
 ]

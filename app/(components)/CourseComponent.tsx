@@ -34,8 +34,8 @@ export default function CourseComponent({data, key, currentUser}:CourseComponent
                     <h3 className="text-[20px] text-zinc-200 cursor-pointer hover:opacity-80" key={key} onClick={() => router.push(`/course/${data.id}`)}>{data.name}</h3>
                     <span className="text-zinc-400 block text-[12px] font-normal">{data.author}</span>
                     <div className="flex justify-between items-center">
-                    <span className="text-white text-xl">{data.price} KM</span>
-                    <Button onClick={toggleBasket} type='button' label={`${hasBasket ? 'Ukloni iz korpe' : 'Dodaj u korpu'}`} hasBasket={hasBasket}/>
+                    <span className="text-white text-xl">$ {data.price}</span>
+                    <Button onClick={toggleBasket} type='button' label={`${hasBasket ? 'Remove from basket' : 'Add to basket'}`} hasBasket={hasBasket}/>
                     </div>
                 </div>
 
