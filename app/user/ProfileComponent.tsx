@@ -75,7 +75,7 @@ export default function ProfileComponent({userId,name,email}:ProfileProps) {
                 <Input placeholder='Name' id='name' type='text' name='name' onChange={handleChange} value={state.name}/>
                 <Input placeholder='Email' id='email' type='email' name='email' onChange={handleChange} value={state.email}/>
                 <Input placeholder='Password' id='password' type='password' name='password' onChange={handleChange} value={state.password}/>
-                <Button type='submit' label="Promjeni" disabled={isLoading}/>
+                <Button type='submit' label="Change" disabled={isLoading}/>
                 </div>
                  </form>
             </div>

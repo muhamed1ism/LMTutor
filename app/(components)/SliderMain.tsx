@@ -42,8 +42,8 @@ export default function SliderMain({images}:CarouselProps) {
 
             {current === 0 && (
                 <div className="absolute top-[20%] right-[10%] rounded-xl bg-zinc-800 p-8 max-w-[500px]">
-                   <h1 className="my-4 text-[2rem] font-bold text-zinc-200">Nauči i ti programirati</h1>
-                    <h4 className="text-[1.2rem] text-zinc-400">Naučite kodirati sa našim tutorijalima i primerima prilagođenim početnicima.</h4>
+                   <h1 className="my-4 text-[2rem] font-bold text-zinc-200">Learn to program</h1>
+                    <h4 className="text-[1.2rem] text-zinc-400">Learn to code with our tutorials and examples tailored for beginners.</h4>
                 </div>
             )}
 

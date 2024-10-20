@@ -17,7 +17,7 @@ const BasketClear: React.FC<BasketClearProps> = ({ currentUser }) => {
         onClick={clearBasket}
         className="bg-gradient-to-r from-red-600 to-rose-700 text-white px-4 py-2 rounded-lg mr-4 hover:opacity-80 transition"
       >
-        Isprazni korpu
+        Clear Basket
       </button>
     </div>
   );

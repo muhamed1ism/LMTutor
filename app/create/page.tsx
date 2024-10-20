@@ -76,32 +76,25 @@ export default function page() {
   return (
     <div className="flex justify-center">
       <div className="flex flex-col h-[900px]">
-
-
         <form className="w-[600px] py-12 flex flex-col items-center gap-4" >
+          <div className="w-[500px]">
+            <ImageUpload value={state.imageSrc} onChange={(value) => setCustomValue('imageSrc',value)}/>
+          </div>
 
-          <>
-            <div className="w-[500px]">
-                <ImageUpload value={state.imageSrc} onChange={(value) => setCustomValue('imageSrc',value)}/>
-            </div>
+          <div className="flex flex-col gap-2 py-4 w-full">
+            <Input big placeholder="Name" id="name" type="text" value={state.name} name="name" onChange={handleChange}/>
+            <Input big placeholder='Author' id='author' type='text' value={state.author} name='author' onChange={handleChange}/>
+            <Input big placeholder='Description' id='description' type='text' value={state.description} name='description' onChange={handleChange}/>
+            <Input big placeholder='Price' id='price' type='number' value={state.price} name='price' onChange={handleChange}/>
+          </div>
 
-            <div className="flex flex-col gap-2 py-4 w-full">
-                <Input big placeholder="Ime tutoriala " id="name" type="text" value={state.name} name="name" onChange={handleChange}/>
-                <Input big placeholder='Autor' id='author' type='text' value={state.author} name='author' onChange={handleChange}/>
-                <Input big placeholder='Opis' id='description' type='text' value={state.description} name='description' onChange={handleChange}/>
-                <Input big placeholder='Cijena' id='price' type='number' value={state.price} name='price' onChange={handleChange}/>
-            </div>
-            
-          </>
+          <Button
+            label="Post"
+            onClick={onSubmit}
+            disabled={loading}
+            className="w-full"
+          />
         </form>
-
-        <Button 
-        label="Dalje"
-        onClick={onSubmit}
-        disabled={loading}
-        />
-          
-
       </div>
     </div>
   )

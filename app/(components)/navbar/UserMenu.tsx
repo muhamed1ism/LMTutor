@@ -14,7 +14,7 @@ export default function UserMenu({currentUser,closeUserMenu}:UserMenuProps) {
 
   return (
     <div className="
-    flex flex-col h-100 bg-zinc-900 shadow-lg right-0 rounded-xl px-4 py-2 gap-6
+    flex flex-col h-100 bg-zinc-900 shadow-lg right-0 rounded-2xl px-4 py-4 gap-6
     ">
         <div className="flex items-center gap-4 hover:opacity-80" onClick={() => router.push('/user')}>
 
@@ -39,7 +39,7 @@ export default function UserMenu({currentUser,closeUserMenu}:UserMenuProps) {
         </div>
 
         <div className="border-zinc-950 bg-zinc-700 text-zinc-200 text-center rounded-xl border-[1px] py-2 px-2 mt-auto hover:opacity-80">
-           <button onClick={() => signOut()}>Odjavi se</button>
+           <button onClick={() => signOut()}>Logout</button>
         </div>
     </div>
   )

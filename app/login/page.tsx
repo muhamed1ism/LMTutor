@@ -60,13 +60,13 @@ export default function page() {
     <form onSubmit={onSubmit} className='text-center'>
         <div className='flex flex-col justify-center h-[450px] w-[350px] mx-auto gap-2'>
         <Input placeholder='Email' id='email' type='email' name='email' onChange={handleChange} value={state.email}/>
-        <Input placeholder='Lozinka' id='password' type='password' name='password' onChange={handleChange} value={state.password}/>
+        <Input placeholder='Password' id='password' type='password' name='password' onChange={handleChange} value={state.password}/>
 
-        <Button disabled={loading} type='submit' label='Prijavi se'/>
+        <Button disabled={loading} type='submit' label='Login'/>
         </div>
 
         <div>
-            <div>Niste napravili račun? <Link href='/register' className='text-blue-600'>Registruj se</Link></div>
+            <div>Haven't created an account? <Link href='/register' className='text-blue-600'>Register</Link></div>
         </div>
     </form>
   )

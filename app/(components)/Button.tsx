@@ -9,6 +9,7 @@ interface ButtonProps {
   disabled?: boolean
   hasBasket?: boolean
   relative?: boolean
+  className?: string
 }
 
 export default function Button({
@@ -20,6 +21,7 @@ export default function Button({
   disabled,
   hasBasket,
   relative,
+  className,
 }: ButtonProps) {
   return (
     <button
@@ -33,6 +35,7 @@ export default function Button({
     ${small ? "text-sm" : "text-lg"} 
     ${small ? " border-[1px]" : "border-1"}
     ${relative ? "px-64" : ""}
+    ${className}
     `}
     
     >

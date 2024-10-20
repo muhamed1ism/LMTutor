@@ -32,6 +32,7 @@ export default function Input({
         onChange={onChange}
         name={name}
         className={`
+        rounded-full
         w-full 
         p-4 
         pt-6 

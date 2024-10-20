@@ -1,7 +1,8 @@
-version: '3.1'
+version: '3.8'
 services:
   mongo:
-    build: ./mongodb_rs
+    build:
+      context: ./mongodb_rs
     restart: always
     environment:
         MONGO_INITDB_ROOT_USERNAME: mongo
@@ -11,11 +12,3 @@ services:
         MONGO_REPLICA_PORT: 27017
     ports:
       - '27017:27017'
-  app:
-    build: ./node_rs
-    ports:
-      - '3000:3000'
-    volumes:
-      -.:/app
-    environment:
-      - NODE_ENV=production
